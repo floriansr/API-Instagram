@@ -20,9 +20,11 @@ fetch(URL)
 const showInstagramPost = (selector, URL, descriptionText) => {
 
     selector.innerHTML += `
-        <div>
-            <img src='${URL}' alt='' />
-            <p>${descriptionText}</p>
-        </div>
+        <div class="card col-lg-3 mt-5 mr-3">
+		    <img class="card-img-top" src="${URL}" alt="Card image cap">
+		    <div class="card-body">
+		        <p class="card-text">${descriptionText}</p>
+    		</div>
+		</div>
     `;
 }
